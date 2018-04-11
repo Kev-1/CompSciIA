@@ -14,15 +14,19 @@ public class MainFrame {
 			if (tompel.equals("multiplication")) {
 				int total = one * two;
 				System.out.println(one + " Mutliplied by " + two + " Equals to " + total);
+				end();
 			} else if (tompel.equals("addition")) {
 				int total = one + two;
 				System.out.println(one + " Added by " + two + " Equals to " + total);
+				end();
 			} else if (tompel.equals("minus")) {
 				int total = one - two;
 				System.out.println(one + " Minus " + two + " Equals to " + total);
+				end();
 			} else if (tompel.equals("divide")) {
 				int total = one / two;
 				System.out.println(one + " Divided by " + two + " Equals to " + total);
+				end();
 			} else {
 				System.out.println("You have entered an invalid input.\nPlease try again.");
 				main(args);
@@ -32,7 +36,11 @@ public class MainFrame {
 		        main(args);
 			}
 		}
+	
+	public static void end() {
+		System.out.println("Thank you for using this program!");
+	}
+	
 	public static void addition() {
-		
 	}
 }
